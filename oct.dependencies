@@ -2,12 +2,12 @@
  {
    "remote": "cm",
    "repository": "android_kernel_asus_grouper",
-   "target_path": "kernel/lge/hammerhead",
+   "target_path": "kernel/asus/grouper",
    "revision": "cm-11.0"
  },
  {
    "remote": "tm",
-   "repository": "proprietary_vendor_lge",
+   "repository": "proprietary_vendor_asus",
    "target_path": "vendor/asus",
    "revision": "cm-11.0"
  }
