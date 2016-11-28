@@ -56,7 +56,7 @@ on boot
     chown system system /sys/class/graphics/fb0/device/smartdimmer/enable
     chown system system /sys/class/graphics/fb0/device/smartdimmer/aggressiveness
 
-    # Default mmc queue settings    
+    # Default mmc queue settings
     # Set read ahead
     write /sys/block/mmcblk0/queue/read_ahead_kb 256
     # Set IO scheduler
@@ -123,12 +123,12 @@ service recoveryd /system/bin/recoveryd /dev/block/platform/sdhci-tegra.3/by-nam
     oneshot
 
 # Bugreport is triggered by holding down volume down and volume up
-service bugreport /system/bin/dumpstate -d -p -B \
-        -o /data/data/com.android.shell/files/bugreports/bugreport
-    class main
-    disabled
-    oneshot
-    keycodes 115 114
+#service bugreport /system/bin/dumpstate -d -p -B \
+#        -o /data/data/com.android.shell/files/bugreports/bugreport
+#    class main
+#    disabled
+#    oneshot
+#    keycodes 115 114
 
 service gpsd /vendor/bin/gpsd -c /system/etc/gps.xml
     class main
